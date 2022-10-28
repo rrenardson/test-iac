@@ -27,14 +27,6 @@ resource "kubernetes_deployment_v1" "example" {
           image = "nginx"
           name  = "example"
 
-          resources {
-            limits = {
-              cpu    = "0.5"
-              memory = "512Mi"
-            }
-            requests = {
-              cpu    = "250m"
-              memory = "50Mi"
             }
           }
 

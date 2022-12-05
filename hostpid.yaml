@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: hostpid
   name: hostpid
@@ -13,11 +12,10 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: hostpid
     spec:
-      hostPID: true
+      hostPID: false
       containers:
       - image: nginx
         name: nginx
